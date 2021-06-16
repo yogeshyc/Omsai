@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="@color/colorWhite">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:focusableInTouchMode="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_margin="5dp">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/omsai_logo"
+                    android:padding="50dp"
+                    android:scaleType="centerCrop"/>
+
+            </LinearLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                app:cardElevation="5dp"
+                android:id="@+id/mobile">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="मोबाईल"
+                    android:inputType="number"
+                    android:textSize="20sp"
+                    android:gravity="left"
+                    android:id="@+id/m"/>
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                app:cardElevation="5dp"
+                android:id="@+id/password">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="पासवर्ड"
+                    android:textSize="20sp"
+                    android:inputType="textPassword"
+                    android:gravity="left"
+                    android:id="@+id/p"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <EditText
+                android:id="@+id/enter_otp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter OTP"
+                android:layout_margin="10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="पासवर्ड विसरलात?"
+                    android:gravity="right"
+                    android:paddingRight="7dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:id="@+id/forgot_password">
+                </TextView>
+                <Button
+                    android:id="@+id/get_otp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:text="GET OTP"
+                    android:layout_marginStart="140dp"
+                    android:background="@color/colorPrimary"
+                    android:textColor="@color/colorWhite"/>
+
+            </LinearLayout>
+
+            <!--<TextView
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:text="पासवर्ड विसरलात?"
+                android:gravity="right"
+                android:paddingRight="7dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:id="@+id/forgot_password">
+            </TextView>-->
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="10dp"
+                app:cardElevation="5dp"
+                app:cardBackgroundColor="@color/colorAccent"
+                android:id="@+id/login">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="लॉगिन"
+                    android:textSize="25sp"
+                    android:gravity="center"
+                    android:textColor="@color/colorWhite"/>
+            </android.support.v7.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:orientation="horizontal"
+                android:layout_marginLeft="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="अद्याप खाते नाही?"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_marginLeft="15dp"
+                    android:text="साइन अप"
+                    android:textColor="@color/colorPrimary"
+                    android:id="@+id/signup"/>
+               <!-- <Button
+                    android:id="@+id/get_otp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="GET OTP"
+                    android:layout_marginStart="100dp"
+                    android:background="@color/colorPrimary"
+                    android:textColor="@color/colorWhite"/>-->
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

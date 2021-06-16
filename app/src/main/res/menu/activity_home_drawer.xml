@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/home"
+            android:title="मुख्यपृष्ठ" />
+<!--        <item-->
+<!--            android:id="@+id/fruit"-->
+<!--            android:title="Fruits" />-->
+<!--        <item-->
+<!--            android:id="@+id/vegetables"-->
+<!--            android:title="Vegetables" />-->
+<!--        <item-->
+<!--            android:id="@+id/dryfruit"-->
+<!--            android:title="Dry Fruits" />-->
+<!--        <item-->
+<!--            android:id="@+id/cutsandsprouts"-->
+<!--            android:title="Cuts and Sprouts" />-->
+        <item
+            android:id="@+id/account"
+            android:title="माझे खाते"
+            android:visible="false" />
+        <item
+            android:id="@+id/orders"
+            android:title="माझे ऑर्डर"
+            android:visible="false" />
+        <item
+            android:id="@+id/aboutus"
+            android:title="आमच्याशी संपर्क" />
+        <item
+            android:id="@+id/login"
+            android:title="लॉगिन"
+            android:visible="true" />
+        <item
+            android:id="@+id/logout"
+            android:title="लॉग आउट"
+            android:visible="false"/>
+        <item
+            android:title="Powered by: Softhub Technologies"
+            android:enabled="false"/>
+    </group>
+
+</menu>

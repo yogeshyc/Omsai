@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">ओम साई ॲग्रो सर्व्हिसेस </string>
+
+    <string name="base_url">http://meradaftar.com/omsai_service/api_new/</string>
+
+    <string name="title_activity_home">Home</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="address">गाळा नंबर ३३ , श्री छत्रपती शिवाजी मार्केट यार्ड , व्यापारी संकुल , राजगुरूनगर , ता - खेड , जि - पुणे </string>
+    <string name="email">omsaiagroenterprises2005.as@gmail.com</string>
+    <string name="mobile">9970814990</string>
+    <string name="contact">9970814990</string>
+    <string name="customer_care"></string>
+    <string name="gst"></string>
+</resources>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.softhub.omsai">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/omsai_logo"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@drawable/omsai_logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ItemActivity" />
+        <activity android:name=".SubCategory" />
+        <activity android:name=".InvoiceActivity" />
+        <activity
+            android:name=".EmployeePage"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".FullScreenImage" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Home"
+            android:label="@string/title_activity_home"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Fruits" />
+        <activity android:name=".Vegetables" />
+        <activity android:name=".DryFruits" />
+        <activity android:name=".CutsandSprouts" />
+        <activity android:name=".Login" />
+        <activity android:name=".Register" />
+        <activity android:name=".Account" />
+        <activity android:name=".OrderHistory" />
+        <activity android:name=".CartActivity" />
+        <activity android:name=".AddressSelect" />
+        <activity android:name=".ForgotPassword" />
+        <activity android:name=".AboutUs" />
+        <activity android:name=".CompleteOrderHistory" />
+        <activity android:name=".DeliveryOrderDetails" />
+        <activity android:name=".AllProductSearch"></activity>
+    </application>
+
+</manifest>

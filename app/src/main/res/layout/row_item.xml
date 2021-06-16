@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:background="@color/colorBlueGray">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:weightSum="3"
+        android:layout_margin="5dp"
+        android:background="@color/colorWhite"
+        android:orientation="horizontal"
+        android:padding="2dp"
+        tools:ignore="MissingConstraints">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="0dp"
+                android:src="@drawable/icon"
+                android:id="@+id/itemImage"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Vegetable Name"
+                android:padding="2dp"
+                android:gravity="center"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:id="@+id/itemName"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="match_parent"
+            android:weightSum="3"
+            android:orientation="vertical"
+            android:paddingLeft="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Rate"
+                    android:gravity="center|left"
+                    android:textSize="14sp"
+                    android:layout_marginRight="15dp"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center|left">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Discount"
+                        android:gravity="center|left"
+                        android:textSize="14sp"
+                        android:id="@+id/itemDiscount"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Price"
+                        android:gravity="center|left"
+                        android:textSize="14sp"
+                        android:id="@+id/itemDiscountRate"/>
+
+                </LinearLayout>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="match_parent"
+                    android:text="Price"
+                    android:gravity="center|left"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="14sp"
+                    android:id="@+id/itemPrice"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:weightSum="3"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="4"
+                    android:gravity="center|left">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:text="Qty."
+                        android:gravity="center|left"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:text="-"
+                        android:textSize="25sp"
+                        android:textColor="@color/colorWhite"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:background="@drawable/buttonfill"
+                        android:id="@+id/decrement"
+                        android:visibility="gone"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:text="1"
+                        android:textSize="20sp"
+                        android:textColor="@color/colorPrimary"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:id="@+id/itemQuantity"
+                        android:visibility="gone"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:text="+"
+                        android:textSize="25sp"
+                        android:textColor="@color/colorWhite"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:background="@drawable/buttonfill"
+                        android:id="@+id/increment"
+                        android:visibility="gone"/>
+
+                    <EditText
+                        android:id="@+id/itemQuantityET"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:text="1"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:digits="0123456789" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorBlack"
+                        android:gravity="center|left"
+                        android:id="@+id/itemTotal"/>
+                    <View
+                        android:layout_width="10dp"
+                        android:layout_height="0dp"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:text="Add"
+                        android:gravity="center"
+                        android:textColor="@color/colorWhite"
+                        android:background="@color/colorAccent"
+                        android:id="@+id/itemAdd"/>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

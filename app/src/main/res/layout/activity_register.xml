@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register"
+    android:background="@color/colorBlueGray">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:weightSum="9">
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_action_back"
+                    android:id="@+id/backButton"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="8"
+                    android:layout_height="match_parent"
+                    android:gravity="center|left"
+                    android:paddingLeft="10dp"
+                    android:text="साइन अप"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="18sp"/>
+            </LinearLayout>
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="40dp"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:weightSum="9">-->
+                <!--<ImageView-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:layout_height="match_parent"/>-->
+                <!--<TextView-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_weight="2"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:gravity="center|left"-->
+                    <!--android:paddingLeft="10dp"-->
+                    <!--android:text="Using"-->
+                    <!--android:textColor="@color/colorWhite"-->
+                    <!--android:textSize="18sp"/>-->
+                <!--<android.support.v7.widget.CardView-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_weight="3"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:background="@color/colorWhite"-->
+                    <!--app:cardCornerRadius="5dp">-->
+                    <!--<ImageView-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:src="@drawable/google"-->
+                        <!--android:padding="2dp"/>-->
+                <!--</android.support.v7.widget.CardView>-->
+            <!--</LinearLayout>-->
+
+            <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="30dp"-->
+                <!--android:gravity="bottom|center"-->
+                <!--android:text="or"-->
+                <!--android:textColor="@color/colorWhite"/>-->
+
+        </LinearLayout>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="25dp"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="7dp"
+            android:src="@drawable/buttonborder"
+            android:id="@+id/form">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_margin="3dp"
+                    app:cardElevation="5dp"
+                    android:id="@+id/name">
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="नाव"
+                        android:textSize="20sp"
+                        android:gravity="left"
+                        android:id="@+id/regi_name"/>
+                </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_margin="3dp"
+                    app:cardElevation="5dp"
+                    android:id="@+id/email">
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="ईमेल (Optional)"
+                        android:textSize="20sp"
+                        android:gravity="left"
+                        android:id="@+id/regi_email"/>
+                </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_margin="5dp"
+                    app:cardElevation="5dp"
+                    android:id="@+id/mobile">
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="मोबाईल"
+                        android:textSize="20sp"
+                        android:maxLength="10"
+                        android:gravity="left"
+                        android:inputType="number"
+                        android:id="@+id/regi_mobile"/>
+                </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_margin="3dp"
+                    app:cardElevation="5dp"
+                    android:id="@+id/password">
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="पासवर्ड"
+                        android:inputType="textPassword"
+                        android:textSize="20sp"
+                        android:gravity="left"
+                        android:id="@+id/regi_password"/>
+                </android.support.design.widget.TextInputLayout>
+                <!--<android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_margin="5dp"
+                    app:cardElevation="5dp"
+                    android:id="@+id/otp">
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="पासवर्ड"
+                        android:inputType="textPassword"
+                        android:textSize="20sp"
+                        android:gravity="left"
+                        android:id="@+id/regi_password"/>
+                </android.support.design.widget.TextInputLayout>-->
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_margin="3dp"
+                    app:cardElevation="5dp">
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="रेफरल कोड"
+                        android:inputType="textCapCharacters"
+                        android:textSize="20sp"
+                        android:gravity="left"
+                        android:id="@+id/regi_ref_code"/>
+                </android.support.design.widget.TextInputLayout>
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Select Employee"
+                    android:layout_margin="5dp"
+                    android:textSize="12sp"
+                    android:id="@+id/employeeSpinner"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="3dp"
+                    android:text="ओम साई सेवेसह साइन अप क्लिक करून, मी पुष्टी करतो आणि"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_marginBottom="10dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Terms of Use "
+                        android:textStyle="bold"
+                        android:textColor="@color/colorPrimary"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="आणि "/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Privacy Policy "
+                        android:textStyle="bold"
+                        android:textColor="@color/colorPrimary"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="स्वीकारतो "/>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="10dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:padding="5dp"
+                        android:text="लोकेशन :"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:padding="5dp"
+                        android:id="@+id/textView"/>
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:id="@+id/layoutOtp"
+                    android:visibility="gone">
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:hint="ओटीपी प्रविष्ट करा"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:id="@+id/reg_otp"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:id="@+id/llButton"
+                        android:layout_marginBottom="15dp">
+                        <Button
+                            android:layout_width="120dp"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="5dp"
+                            android:background="@color/colorPrimary"
+                            android:text="व्हेरिफाय "
+                            android:textColor="@color/colorWhite"
+                            android:id="@+id/verifyOtp"/>
+                        <Button
+                            android:id="@+id/resendOtp"
+                            android:layout_width="120dp"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="10dp"
+                            android:background="@color/colorPrimary"
+                            android:text="रिसेन्ड"
+                            android:textColor="@color/colorWhite"/>
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+            <android.support.v7.widget.CardView
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                app:cardCornerRadius="5dp"
+                android:id="@+id/submit">
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="30dp"
+                    android:text="साइन अप"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:textColor="@color/colorWhite"
+                    android:background="@color/colorAccent"
+                    android:padding="2dp"/>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
